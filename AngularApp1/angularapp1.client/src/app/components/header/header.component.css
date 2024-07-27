@@ -1,0 +1,22 @@
+header {
+    background-color: var(--primaryColor);
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    height: 80px;
+    position:sticky;
+    top: 0px;
+    border-bottom: 1px solid black;
+}
+
+.navigationLink{
+    color:var(--text);
+    transition: 0.15s ease-in;
+}
+
+.navigationLink:hover {
+    cursor: pointer;
+    color: var(--altText);
+    transition: 0.15s ease-in;
+}
+

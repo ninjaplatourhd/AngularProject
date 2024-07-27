@@ -1,0 +1,15 @@
+<table class="tableStyle">
+    <tr class="rowStyle headerRow">
+        <th *ngFor="let column of columns" class="headerStyle">{{ column.header }}</th>
+        <th class="headerStyle"></th>
+    </tr>
+    <tr *ngFor="let entity of entities" class="rowStyle">
+        <td *ngFor="let column of columns" class="cellStyle">{{ entity[column.field] }}</td>
+        <td class="cellStyle actionsCell">
+            <div class="buttonContainer">
+                <button class="buttonStyle" id="buttonUpdate" (click)="onUpdate(entity.id)">Update</button>
+                <button class="buttonStyle" id="buttonDelete" (click)="onDelete(entity.id)">Delete</button>
+            </div>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,36 @@
+form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
+  
+  input, select, textarea {
+    padding: 5px;
+    font-size: 1em;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #30e92a;
+    width: 150px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #59a31c;
+  }
+
+  #gameInputBody{
+    padding:25px;
+  }

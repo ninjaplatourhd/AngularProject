@@ -1,0 +1,47 @@
+:host{
+    height: 100%;
+}
+
+#gameDetailsBody {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background-color: var(--background);
+    justify-content: space-between;
+}
+
+#contentSection {
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    height: 100%;
+    
+}
+
+#title{
+    margin-left: 20px;
+}
+
+#bannerImage{
+    width:100%;
+    max-height: 400px;
+    object-fit:contain;
+}
+
+#description{
+    margin-left: 20px;
+}
+
+#infoSection {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    border-left: 1px solid black;
+    padding: 10px;
+    background-color: var(--backgroundBrighter);
+    min-width: 250px;
+}
+
+.gameInfo {
+    margin-top:10px;
+}

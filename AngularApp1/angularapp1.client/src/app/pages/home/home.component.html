@@ -1,0 +1,34 @@
+<div id="homeBody">
+    <section id="filterSection">
+        <h1>Filters</h1>
+        <h2>Genres</h2>
+            <div *ngFor="let genre of genres; let i = index">
+                <input 
+                type="checkbox" 
+                [id]="'checkboxId' + i" 
+                [value]="genre.name"
+                (change)="onGenreChange(genre.name, $event)">
+              <label [for]="'checkboxId' + i">{{ genre.name }}</label>
+            </div>
+        <h2>Developers</h2>
+        <div *ngFor="let dev of developers; let j = index">
+            <input 
+            type="checkbox" 
+            [id]="'checkboxDevId' + j" 
+            [value]="dev.name"
+            (change)="onDeveloperChange(dev.name, $event)">
+          <label [for]="'checkboxDevId' + j">{{ dev.name }}</label>
+        </div>
+    </section>
+    <section id="gamesSection">
+        <app-search-bar id="searchBar" (search)="onSearch($event)"></app-search-bar>
+        <div id="gamesFlexbox">
+            <app-game-item *ngFor="let game of filteredGames" [game]="game"></app-game-item>
+        </div>
+       
+       
+       
+        
+    </section>
+ 
+</div>

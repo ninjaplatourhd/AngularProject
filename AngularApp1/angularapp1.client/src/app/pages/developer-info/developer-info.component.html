@@ -1,0 +1,14 @@
+<div id="developerInfoBody">
+    <h1 id="title">Developers</h1>
+    <div id="addAndSearch">
+        <app-search-bar (search)="onSearch($event)"></app-search-bar>
+        <button id="buttonAdd" (click)="navigateToAdd('/developer-input')" >Add Developer</button>
+    </div>
+    <app-data-table
+        [entities]="filteredDevelopers"
+        [columns]="developerColumns"
+        (update)="updateDeveloper($event)"
+        (delete)="deleteDeveloper($event)">
+    </app-data-table>
+
+</div>

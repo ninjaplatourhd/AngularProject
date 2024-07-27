@@ -1,0 +1,50 @@
+<div id="gameInputBody">
+<form [formGroup]="gameForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="name">Name:</label>
+      <input id="name" formControlName="name" />
+    </div>
+  
+    <div>
+      <label for="genre">Genre:</label>
+      <select id="genre" formControlName="genre">
+        <option *ngFor="let genre of genres" [value]="genre.id">{{ genre.name }}</option>
+      </select>
+    </div>
+  
+    <div>
+      <label for="price">Price:</label>
+      <input id="price" formControlName="price" type="number" />
+    </div>
+  
+    <div>
+      <label for="releaseDate">Release Date:</label>
+      <input id="releaseDate" formControlName="releaseDate" type="date" />
+    </div>
+  
+    <div>
+      <label for="imagePath">Image Path:</label>
+      <input id="imagePath" formControlName="imagePath" />
+    </div>
+  
+    <div>
+      <label for="bannerPath">Banner Path:</label>
+      <input id="bannerPath" formControlName="bannerPath" />
+    </div>
+
+    <div>
+        <label for="description">Description:</label>
+        <textarea id="description" formControlName="description"></textarea>
+      </div>
+  
+    <div>
+        <label>Developers:</label>
+        <div *ngFor="let developer of developers">
+          <input type="checkbox" [value]="developer.id" (change)="onDeveloperChange($event)" [checked]="selectedDevelopers.includes(developer.id)" />
+          {{developer.name}}
+        </div>
+      </div>
+  
+    <button type="submit">Submit</button>
+  </form>
+</div>

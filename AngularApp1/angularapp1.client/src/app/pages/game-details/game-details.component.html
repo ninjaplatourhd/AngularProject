@@ -1,0 +1,19 @@
+<div id="gameDetailsBody" *ngIf="game">
+<section id="contentSection">
+    <h1 id="title" class="font-title">{{game.name}}</h1>
+    <img src="/assets/images/games/{{game.bannerPath}}.png" id="bannerImage">
+    <p id="description">{{game.description}}</p>
+
+
+</section>
+<section id="infoSection">
+    <h2>Game Information</h2>
+    <img src="/assets/images/games/{{game.imagePath}}.png" id="gameImage">
+    <h3 class="gameInfo">Name: {{game.name}}</h3>
+    <h3 class="gameInfo">Price: {{game.price}}$</h3>
+    <h3 class="gameInfo">Release Date: {{game.releaseDate}}</h3>
+    <h3 class="gameInfo">Genre: {{game.genre}}</h3>
+    <h3 class="gameInfo">Developers: {{game.developers}}</h3>
+</section>
+
+</div>

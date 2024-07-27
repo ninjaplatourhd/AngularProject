@@ -1,0 +1,26 @@
+#gameBody{
+    width: 200px;
+    height: 300px;
+    background-color: var(--backgroundBrighter);
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-top: 25px;
+    transition: 0.2s ease-in;
+    border-radius: 3%;
+    border:2px solid black;
+}
+
+#gameImage {
+    max-width: 200px;
+    max-height: 200px;
+    min-height: 200px;
+}
+
+
+#gameBody:hover {
+    transition: 0.2s ease-in;
+    scale: 1.1;
+    cursor:pointer;
+}
+

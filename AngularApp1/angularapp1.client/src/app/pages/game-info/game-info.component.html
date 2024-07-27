@@ -1,0 +1,14 @@
+<div id="gameInfoBody">
+    <h1 id="title">Games</h1>
+    <div id="addAndSearch">
+        <app-search-bar (search)="onSearch($event)"></app-search-bar>
+        <button id="buttonAdd" (click)="navigateToAdd('/game-input')" >Add Game</button>
+    </div>
+    <app-data-table
+        [entities]="filteredGames"
+        [columns]="gameColumns"
+        (update)="updateGame($event)"
+        (delete)="deleteGame($event)">
+    </app-data-table>
+
+</div>

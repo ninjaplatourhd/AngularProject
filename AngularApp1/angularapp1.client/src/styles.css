@@ -1,0 +1,108 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  app-root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+
+.smallIcon {
+    height: 25px;
+    width: 25px;
+}
+
+.mediumIcon {
+    height: 50px;
+    width: 50px;
+}
+
+.bigIcon {
+    height: 80px;
+    width: 80px;
+}
+
+.round {
+    border-radius: 100%;
+}
+
+.halfRound {
+    border-radius: 50%;
+}
+
+:root {
+    --paragraf:1.8em;
+    --navigation:2.5em;
+    --title:3.2em;
+
+    --primaryColor:rgb(46, 167, 248);
+    --secondaryColor:rgb(255, 155, 4);
+    --text:rgb(0,0,0);
+    --altText:rgb(245,245,245);
+    --background:rgb(248, 244, 244);
+    --backgroundBrighter:rgb(253, 248, 248);
+    
+
+}
+
+.font-title{
+    font-size: var(--title);
+}
+
+.font-paragraf {
+    font-size: var(--paragraf);
+}
+
+.font-navigation {
+    font-size: var(--navigation);
+}
+
+.mg-none{
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+
+.mg-r5{
+    margin-right: 5px;
+}
+
+.mg-r15{
+    margin-right: 15px;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0px;
+}
+
+
+tr:nth-child(even) {
+    background-color: var(--backgroundBrighter);
+  }
+
+.tableStyle {
+    border-collapse: collapse;
+  
+
+}
+
+th {
+        background-color: var(--secondaryColor);
+        color: #ffffff;
+        text-align: left;
+
+}
+
+tr {
+    border:1px solid black;
+}

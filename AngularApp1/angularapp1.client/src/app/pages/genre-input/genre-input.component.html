@@ -1,0 +1,9 @@
+<div id="genreInputBody">
+    <form [formGroup]="genreForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="name">Name:</label>
+      <input id="name" formControlName="name" />
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>

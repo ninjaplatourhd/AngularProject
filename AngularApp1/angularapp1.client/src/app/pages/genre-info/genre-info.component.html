@@ -1,0 +1,14 @@
+<div id="genreInfoBody">
+    <h1 id="title">Genres</h1>
+    <div id="addAndSearch">
+        <app-search-bar (search)="onSearch($event)"></app-search-bar>
+        <button id="buttonAdd" (click)="navigateToAdd('/genre-input')" >Add Genre</button>
+    </div>
+    <app-data-table
+        [entities]="filteredGenres"
+        [columns]="genreColumns"
+        (update)="updateGenre($event)"
+        (delete)="deleteGenre($event)">
+    </app-data-table>
+
+</div>

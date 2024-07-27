@@ -1,0 +1,14 @@
+<div id="gameBody" (click)="onSelect(game.id)">
+<img src="/assets/images/games/{{game.imagePath}}.png" id="gameImage">
+
+<h3>{{game.name}}</h3>
+
+<h5>{{game.developers}}</h5>
+<!--
+<div class="developers-list">
+    <span *ngFor="let dev of developers">{{ dev }}</span>
+  </div>
+-->
+<h6>{{game.genre}}</h6>
+
+</div>
